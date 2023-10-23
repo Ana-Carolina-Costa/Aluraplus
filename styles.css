@@ -1,0 +1,181 @@
+/* Definindo variáveis de cor, fonte e outros valores que podem ser reutilizados */
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter';
+    --botao-azul-efeito: #3c92fa;
+}
+
+/* Estilos para o corpo da página (body) */
+body {
+    background-color: var(--cor-de-fundo); /* Cor de fundo da página */
+    color: var(--branco-principal); /* Cor do texto */
+    font-family: var(--fonte-principal); /* Fonte usada */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: 400; /* Peso da fonte */
+}
+
+/* Resetando margens e preenchimentos para todos os elementos na página */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para uma classe chamada "principal" */
+.principal {
+    background-image: url("img/Background.png"); /* Imagem de fundo */
+    background-repeat: no-repeat; /* Evita que a imagem de fundo se repita */
+    background-size: contain; /* Ajusta o tamanho da imagem de fundo */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    text-align: center; /* Centraliza o texto no contêiner */
+}
+
+/* Estilos para um contêiner com classe "container" */
+.container {
+    height: 100vh; /* Define a altura como 100% da altura da janela (viewport) */
+    display: grid; /* Usa um sistema de grid para organizar o conteúdo */
+    grid-template-columns: 50% 50%; /* Divide o contêiner em duas colunas de largura igual */
+}
+
+/* Estilos para um botão com classe "container__botao" */
+.container__botao {
+    background-color: var(--botao-azul); /* Cor de fundo do botão */
+    border-radius: 5px; /* Borda arredondada */
+    padding: 1em; /* Espaçamento interno do botão */
+    color: var(--branco-principal); /* Cor do texto do botão */
+    display: block; /* Torna o botão um elemento de bloco */
+    text-decoration: none; /* Remove a decoração de link (sublinhado) */
+    margin-bottom: 1em; /* Espaçamento inferior */
+}
+
+/* Estilos para um botão secundário */
+.botao_secundario {
+    background-color: transparent; /* Fundo transparente */
+    border: 2px solid var(--branco-principal); /* Borda sólida com cor branca */
+}
+
+/* Estilos para uma classe chamada "container__aviso" */
+.container__aviso {
+    font-size: 12px; /* Tamanho da fonte menor */
+    color: var(--cinza-secundario); /* Cor do texto em cinza */
+}
+
+/* Estilos para um título dentro do contêiner */
+.container__titulo {
+    font-size: 28px; /* Tamanho do título */
+    font-weight: 700; /* Peso da fonte mais pesado (negrito) */
+}
+
+/* Estilos para uma imagem dentro do contêiner */
+.container__imagem {
+    margin: 1em 0 2em 0; /* Espaçamento nas margens */
+}
+
+/* Estilos para uma caixa dentro do contêiner */
+.container__caixa {
+    margin: 0 6em; /* Espaçamento nas margens (horizontal) */
+}
+
+/* Estilos para uma imagem secundária e seu contêiner */
+.secundario__imagem {
+    width: 80%; /* Largura da imagem em 80% */
+}
+
+.secundario {
+    align-items: center; /* Centraliza elementos verticalmente */
+    margin: 0 10em; /* Espaçamento nas margens (horizontal) */
+}
+
+/* Estilos para o título de descrição */
+.descricao__titulo {
+    font-weight: 700; /* Peso da fonte mais pesado (negrito) */
+    font-size: 48px; /* Tamanho grande do título */
+    color: var(--branco-principal); /* Cor do título em branco */
+    margin-bottom: 0.1em; /* Espaçamento inferior pequeno */
+}
+
+/* Estilos para o texto de descrição */
+.descricao__texto {
+    color: var(--cinza-secundario); /* Cor do texto em cinza */
+}
+
+/* Estilos para um botão secundário */
+.secundario__botao {
+    display: inline-block; /* Torna o botão um elemento em linha */
+    margin-top: 1em; /* Espaçamento superior */
+}
+
+/* Estilos para um contêiner de descrição */
+.container__descricao {
+    padding: 2em; /* Espaçamento interno */
+}
+
+/* Estilos para uma lista de dispositivos */
+.dispositivos__lista {
+    display: flex; /* Exibe os itens da lista em uma linha */
+    justify-content: center; /* Centraliza horizontalmente */
+    list-style-type: none; /* Remove os marcadores da lista */
+    margin: 5em 0; /* Espaçamento superior e inferior */
+}
+
+/* Estilos para a seção de dispositivos */
+.dispositivos {
+    text-align: center; /* Centraliza o texto na seção */
+}
+
+/* Estilos para os títulos da seção de dispositivos */
+.dispositivos__titulos {
+    font-size: 48px; /* Tamanho grande do título */
+    color: var(--branco-principal); /* Cor do título em branco */
+}
+
+/* Estilos para os itens da lista */
+.lista__item {
+    font-size: 32px; /* Tamanho do texto dos itens da lista */
+}
+
+/* Estilos para uma lista no rodapé */
+.rodape__lista {
+    display: flex; /* Exibe os itens da lista em uma linha */
+    justify-content: center; /* Centraliza horizontalmente */
+    list-style-type: none; /* Remove os marcadores da lista */
+    margin-top: 1em; /* Espaçamento superior */
+}
+
+/* Estilos para os links na lista */
+.lista__link a {
+    text-decoration: none; /* Remove a decoração de link (sublinhado) */
+    color: var(--branco-principal); /* Cor dos links em branco */
+    margin-left: 1em; /* Espaçamento à esquerda entre os links */
+}
+
+/* Estilos para o texto no rodapé */
+.rodape__texto {
+    margin: 1em 0; /* Espaçamento no rodapé */
+    color: var(--cinza-secundario); /* Cor do texto em cinza */
+    font-size: 14px; /* Tamanho menor da fonte */
+}
+
+/* Estilos para o rodapé */
+.rodape {
+    text-align: center; /* Centraliza o texto no rodapé */
+    margin: 5em 3em; /* Espaçamento nas margens */
+}
+
+/* Estilos de link quando passa o mouse sobre eles */
+.lista__link a:hover {
+    color: var(--botao-azul); /* Muda a cor do link ao passar o mouse */
+}
+
+/* Estilos de link quando clicados (ativo) */
+.lista__link a:active {
+    color: purple; /* Muda a cor do link quando clicado */
+}
+
+/* Estilos para o botão quando passa o mouse sobre ele */
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito); /* Muda a cor de fundo do botão ao passar o mouse */
+    color: var(--cor-de-fundo); /* Muda a cor do texto do botão ao passar o mouse */
+}
